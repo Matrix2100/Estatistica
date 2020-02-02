@@ -1,0 +1,50 @@
+#a variável dados recebe os valores do EXCEL
+dados = atividade_7_pagina_27_parte_1_2020_1
+#convertendo os dados para numéricos
+dados = as.numeric(unlist(dados))
+dados
+
+#dados em ordem decrescente
+dados = sort(dados, decreasing = TRUE)
+dados
+
+#MAXIMO E MINIMMO DE DADOS
+x_min = min(dados)
+x_max = max(dados)
+
+#amplitude total
+amplitude_total = x_max - x_min
+amplitude_total
+
+#número de elementos da variável
+N = length(dados)
+N
+#número de classes
+K = 1 + (3.3)*log10(N)
+K = ceiling(K)
+K
+
+#amplitude das classes
+amplitude_classes = amplitude_total/K
+amplitude_classes = ceiling(amplitude_classes)
+amplitude_classes
+
+#intervalo das classes
+int_classes = seq(x_min,x_max+3,amplitude_classes)
+int_classes
+
+#classes
+classes = c("[39-43)","[43-47)","[47-51)","[51-55)","[55-59)","[59-63)")
+classes
+
+#construindo a tabela de frequências
+w = table( cut(dados,breaks= int_classes,right =FALSE, names=classes))
+w
+
+#gráfico da tabela de frequências
+windows()
+plot(w,ylab = "FREQUÊNCIAS")
+
+#GRÁFICO DE BARRAS
+windows()
+barplot(w,ylab="FREQUÊNCIAS",xlab="CLASSES",names=classes,color=2:5)
