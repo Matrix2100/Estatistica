@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1581278569512.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4223330317",
+    "id" : "1DA81732",
+    "lastKnownWriteTime" : 1581304770,
+    "last_content_update" : 1581304772673,
+    "path" : "~/GitHub/Estatistica/ME1_Q3.R",
+    "project_path" : "ME1_Q3.R",
+    "properties" : {
+        "cursorPosition" : "21,21",
+        "scrollLine" : "15",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

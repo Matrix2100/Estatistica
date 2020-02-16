@@ -41,6 +41,8 @@ classes
 w = table( cut(dados,breaks= int_classes,right =FALSE, names=classes))
 w
 
+hist(mtcars$mpg, breaks=12, col="red")
+
 #gráfico da tabela de frequências
 windows()
 plot(w,ylab = "FREQUÊNCIAS")
